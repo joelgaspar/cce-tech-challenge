@@ -74,12 +74,6 @@ Resources:
         Variables:
           TABLE_NAME: !Ref ItemsTable
 
-  IngestFunctionLogGroup:
-    Type: AWS::Logs::LogGroup
-    Properties:
-      LogGroupName: !Sub "/aws/lambda/${IngestFunction}"
-      RetentionInDays: 14
-
   # ---------------------------------------------------------------------
   # HTTP API
   # ---------------------------------------------------------------------
